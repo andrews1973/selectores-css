@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="page-home">
+        <header>
+            <h1>Selectores css</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#nav">home</a></li>
+                    <li><a href="#main">formulario</a></li>
+                    <li><a href="#footer">Pie</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <div class="izq">
+                <h2>Caja derecha</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur hic sapiente harum porro aperiam quasi quis quisquam voluptate vero.
+                    Officia omnis commodi cupiditate ipsam possimus magni minima odio dolor facilis!
+                </p>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="der">
+                <h2>Contacto</h2>
+                <form class="formulario" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o Comentarios</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje..."
+                            required></textarea>
+                    </div>
+
+                    <button class="enviar" type="submit">Enviar Formulario</button>
+                </form>
+            </div>
+        </main>
+        <footer id="footer">
+            © Andrés Diéguez Fernández 2027
+        </footer>
+    </div>
+
+</body>
+
+</html>
