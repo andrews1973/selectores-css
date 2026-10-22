@@ -75,7 +75,6 @@ nav ul li a:hover {
 }
 
 .der, .izq {
-    width: 100%;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 7px 0px 17px gray;
@@ -104,12 +103,13 @@ footer {
 .formulario input, textarea{
     display: block;
     padding: 0.5rem;
+    width: 100%;
 }
 
 .formulario label {
     display: block;
     margin-bottom: 0.5rem;
-    width: 100%;
+    width: 90%;
 }
 
 .formulario button.enviar {
@@ -124,14 +124,64 @@ footer {
     background: #08eb08;
 }
 
+/* ====768==== */
+
 @media (min-width: 768px) {
     .der, .izq {
-        width: 50%;
+        width: 45%;
     }
     #main {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+}
+
+
+
+/* ====992==== */
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3rem;
+        color: rgb(6, 0, 171);
+    }
+
+    h2.tit-tarjeta {
+        font-style: normal;
+        text-transform: lowercase;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        color: rgb(1, 77, 1)
+    }
+}
+
+/* ====1200==== */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3.5rem;
+        color: rgb(51, 181, 79);
+    }
+
+    h2.tit-tarjeta {
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        color: rgb(26, 1, 12)
+    }
+
 }
 
